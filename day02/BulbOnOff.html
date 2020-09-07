@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<titel>Лампочка</title>
+<button id="toggle"> Включить</button>
+</br>
+
+<img id="bulbOn" src="./bulbOn.png" hidden>
+<img id="bulbOff" src="./bulbOff.png">
+
+<script>
+const bulbToggle = document.getElementById("toggle");
+bulbToggle.addEventListener("click", () => {
+    const bulb = document.getElementById("bulbOn");
+    if (bulbOn.hidden) {
+        bulbOn.hidden = false;
+        bulbToggle.innerText = "Выключить";
+        bulbOff.hidden = true;
+    } else {
+        bulbOn.hidden = true;
+        bulbToggle.innerText = "Включить";
+        bulbOff.hidden = false;
+    }
+})
+</script>
